@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Events;
 
-use Illuminate\Queue\SerializesModels;
 use AlgorizaTeam\MediaLibrary\HasMedia;
+use Illuminate\Queue\SerializesModels;
 
 class CollectionHasBeenCleared
 {

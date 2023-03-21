@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators;
 
-use Illuminate\Support\Collection;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use Illuminate\Support\Collection;
 
 class Pdf extends ImageGenerator
 {

@@ -2,11 +2,11 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions;
 
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Support\FileNamer\FileNamer;
 use BadMethodCallException;
 use Illuminate\Support\Traits\Conditionable;
 use Spatie\Image\Manipulations;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
-use AlgorizaTeam\MediaLibrary\Support\FileNamer\FileNamer;
 
 /** @mixin \Spatie\Image\Manipulations */
 class Conversion

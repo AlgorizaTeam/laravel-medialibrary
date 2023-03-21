@@ -2,10 +2,10 @@
 
 namespace AlgorizaTeam\MediaLibrary\Support\UrlGenerator;
 
-use DateTimeInterface;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Support\PathGenerator\PathGenerator;
+use DateTimeInterface;
 
 interface UrlGenerator
 {

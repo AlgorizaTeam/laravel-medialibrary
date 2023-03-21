@@ -2,9 +2,9 @@
 
 namespace AlgorizaTeam\MediaLibrary\Support;
 
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Support\Collection;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use ZipStream\Option\Archive as ArchiveOptions;
 use ZipStream\ZipStream;

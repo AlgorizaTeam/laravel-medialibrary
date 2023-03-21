@@ -2,9 +2,9 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Models\Collections;
 
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Collection;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 /**
  * @template TKey of array-key

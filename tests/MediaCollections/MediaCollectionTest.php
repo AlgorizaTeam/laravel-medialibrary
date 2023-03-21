@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\MediaCollections\MediaCollection;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestUuidPathGenerator;
+use Illuminate\Support\Str;
 
 it('can get the sum of all media item sizes', function () {
     $mediaItem = $this

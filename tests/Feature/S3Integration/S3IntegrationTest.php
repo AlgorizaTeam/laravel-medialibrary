@@ -1,9 +1,9 @@
 <?php
 
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Storage;
 use AlgorizaTeam\MediaLibrary\Support\MediaStream;
 use AlgorizaTeam\MediaLibrary\Tests\Feature\S3Integration\S3TestPathGenerator;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 use Spatie\TemporaryDirectory\TemporaryDirectory;
 
 beforeEach(function () {

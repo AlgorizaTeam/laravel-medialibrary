@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithCustomLoadingAttribute;
+use Illuminate\Support\Str;
 use Spatie\Snapshots\MatchesSnapshots;
 
 uses(MatchesSnapshots::class);

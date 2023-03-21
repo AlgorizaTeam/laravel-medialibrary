@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\ResponsiveImages;
 
-use Illuminate\Support\Collection;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Support\Collection;
 
 class RegisteredResponsiveImages
 {

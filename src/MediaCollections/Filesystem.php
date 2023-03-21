@@ -2,10 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
-use Exception;
-use Illuminate\Contracts\Filesystem\Factory;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
 use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Events\MediaHasBeenAdded;
@@ -14,6 +10,10 @@ use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Support\File;
 use AlgorizaTeam\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
 use AlgorizaTeam\MediaLibrary\Support\RemoteFile;
+use Exception;
+use Illuminate\Contracts\Filesystem\Factory;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Filesystem
 {

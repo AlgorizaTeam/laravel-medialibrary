@@ -2,9 +2,9 @@
 
 namespace AlgorizaTeam\MediaLibrary\Tests\TestSupport;
 
-use Illuminate\Support\Collection;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\ImageGenerator;
+use Illuminate\Support\Collection;
 
 class TestImageGeneratorWithConfig extends ImageGenerator
 {

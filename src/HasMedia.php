@@ -2,11 +2,11 @@
 
 namespace AlgorizaTeam\MediaLibrary;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Support\Collection;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\MediaCollections\FileAdder;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Support\Collection;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 interface HasMedia

@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Event;
 use AlgorizaTeam\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
 use AlgorizaTeam\MediaLibrary\Conversions\Events\ConversionWillStart;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
+use Illuminate\Support\Facades\Event;
 
 beforeEach(function () {
     Event::fake();

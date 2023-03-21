@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\File;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
+use Illuminate\Support\Facades\File;
 
 beforeEach(function () {
     foreach (range(1, 3) as $index) {

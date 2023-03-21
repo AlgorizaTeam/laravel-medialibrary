@@ -2,12 +2,12 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions;
 
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Spatie\Image\Manipulations;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 /**
  * @template TKey of array-key

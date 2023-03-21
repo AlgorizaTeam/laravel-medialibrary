@@ -2,10 +2,10 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Models\Observers;
 
-use Illuminate\Database\Eloquent\SoftDeletes;
 use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class MediaObserver
 {

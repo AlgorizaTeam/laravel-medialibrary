@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Support\MediaStream;
+use Illuminate\Support\Facades\Route;
 use Spatie\TemporaryDirectory\TemporaryDirectory;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 

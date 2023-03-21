@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions;
 
-use Exception;
 use AlgorizaTeam\MediaLibrary\Support\PathGenerator\PathGenerator;
+use Exception;
 
 class InvalidPathGenerator extends Exception
 {

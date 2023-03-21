@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\ResponsiveImages\Exceptions;
 
-use Exception;
 use AlgorizaTeam\MediaLibrary\Support\File;
+use Exception;
 
 class InvalidTinyJpg extends Exception
 {

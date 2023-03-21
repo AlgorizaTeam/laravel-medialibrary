@@ -2,11 +2,11 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
-use Illuminate\Contracts\Support\Htmlable;
 use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
 use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\Image;
 use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Contracts\Support\Htmlable;
 
 class HtmlableMedia implements Htmlable, \Stringable
 {

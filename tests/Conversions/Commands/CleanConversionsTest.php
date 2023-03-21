@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\DB;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
@@ -8,6 +7,7 @@ use AlgorizaTeam\MediaLibrary\Tests\Support\PathGenerator\CustomPathGenerator;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestPathGenerators\TestPathGeneratorConversionsInOriginalImageDirectory;
+use Illuminate\Support\Facades\DB;
 
 beforeEach(function () {
     $this->media['model1']['collection1'] = $this->testModel

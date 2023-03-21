@@ -2,9 +2,9 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators;
 
-use Illuminate\Support\Collection;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Support\Collection;
 
 abstract class ImageGenerator
 {

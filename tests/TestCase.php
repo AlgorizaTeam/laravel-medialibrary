@@ -2,12 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary\Tests;
 
-use CreateTemporaryUploadsTable;
-use Dotgetenv\Dotgetenv;
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\File;
-use Orchestra\Testbench\TestCase as Orchestra;
 use AlgorizaTeam\MediaLibrary\MediaLibraryServiceProvider;
 use AlgorizaTeam\MediaLibrary\Support\MediaLibraryPro;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
@@ -20,6 +14,12 @@ use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMultiple
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithPreviewConversion;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithResponsiveImages;
+use CreateTemporaryUploadsTable;
+use Dotgetenv\Dotgetenv;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\File;
+use Orchestra\Testbench\TestCase as Orchestra;
 use ZipArchive;
 
 abstract class TestCase extends Orchestra

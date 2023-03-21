@@ -2,15 +2,15 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\Commands;
 
+use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
+use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
-use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class RegenerateCommand extends Command
 {

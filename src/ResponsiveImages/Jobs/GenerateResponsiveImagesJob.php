@@ -2,12 +2,12 @@
 
 namespace AlgorizaTeam\MediaLibrary\ResponsiveImages\Jobs;
 
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
-use AlgorizaTeam\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
 
 class GenerateResponsiveImagesJob implements ShouldQueue
 {

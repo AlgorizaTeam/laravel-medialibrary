@@ -2,11 +2,11 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Collection;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
 use AlgorizaTeam\MediaLibrary\Support\RemoteFile;
 use AlgorizaTeam\MediaLibraryPro\Dto\PendingMediaItem;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class FileAdderFactory

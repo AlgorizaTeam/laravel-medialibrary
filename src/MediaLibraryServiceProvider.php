@@ -2,7 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary;
 
-use Illuminate\Support\ServiceProvider;
 use AlgorizaTeam\MediaLibrary\Conversions\Commands\RegenerateCommand;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Commands\CleanCommand;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Commands\ClearCommand;
@@ -11,6 +10,7 @@ use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
 use AlgorizaTeam\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
 use AlgorizaTeam\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use Illuminate\Support\ServiceProvider;
 
 class MediaLibraryServiceProvider extends ServiceProvider
 {

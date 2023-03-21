@@ -1,8 +1,8 @@
 <?php
 
+use AlgorizaTeam\MediaLibrary\Tests\TestCase;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use AlgorizaTeam\MediaLibrary\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 

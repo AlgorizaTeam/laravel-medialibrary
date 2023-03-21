@@ -2,13 +2,13 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
+use AlgorizaTeam\MediaLibrary\HasMedia;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as DbCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use AlgorizaTeam\MediaLibrary\HasMedia;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaRepository
 {

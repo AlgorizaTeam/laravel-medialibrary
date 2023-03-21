@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Support\Facades\Storage;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
@@ -15,6 +13,8 @@ use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 it('can add an file to the default collection', function () {

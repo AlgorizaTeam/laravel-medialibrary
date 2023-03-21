@@ -2,10 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
-use Closure;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Traits\Macroable;
 use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
 use AlgorizaTeam\MediaLibrary\HasMedia;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
@@ -20,6 +16,10 @@ use AlgorizaTeam\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
 use AlgorizaTeam\MediaLibrary\Support\File;
 use AlgorizaTeam\MediaLibrary\Support\RemoteFile;
 use AlgorizaTeam\MediaLibraryPro\Models\TemporaryUpload;
+use Closure;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Traits\Macroable;
 use Symfony\Component\HttpFoundation\File\File as SymfonyFile;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

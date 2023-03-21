@@ -2,9 +2,9 @@
 
 namespace AlgorizaTeam\MediaLibrary\Support\PathGenerator;
 
-use Illuminate\Database\Eloquent\Relations\Relation;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidPathGenerator;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Database\Eloquent\Relations\Relation;
 
 class PathGeneratorFactory
 {

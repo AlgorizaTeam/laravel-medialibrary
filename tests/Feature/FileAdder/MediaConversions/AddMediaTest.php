@@ -1,11 +1,11 @@
 <?php
 
-use Carbon\Carbon;
-use Spatie\Image\Manipulations;
 use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
+use Carbon\Carbon;
+use Spatie\Image\Manipulations;
 
 it('can add an file to the default collection', function () {
     $media = $this->testModelWithoutMediaConversions

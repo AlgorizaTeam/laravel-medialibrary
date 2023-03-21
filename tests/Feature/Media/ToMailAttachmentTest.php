@@ -1,12 +1,12 @@
 <?php
 
-use Illuminate\Mail\Attachment;
-use Illuminate\Support\Facades\Mail;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\Mail\AttachmentMail;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\Mail\InvalidMediaConversionAttachmentMail;
 use AlgorizaTeam\MediaLibrary\Tests\TestSupport\Mail\MediaConversionAttachmentMail;
+use Illuminate\Mail\Attachment;
+use Illuminate\Support\Facades\Mail;
 
 beforeEach(function () {
     $this->testModelWithConversion

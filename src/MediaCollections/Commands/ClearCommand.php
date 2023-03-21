@@ -2,11 +2,11 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Commands;
 
+use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Database\Eloquent\Collection;
-use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class ClearCommand extends Command
 {

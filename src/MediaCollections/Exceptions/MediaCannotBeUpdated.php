@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions;
 
-use Exception;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Exception;
 
 class MediaCannotBeUpdated extends Exception
 {

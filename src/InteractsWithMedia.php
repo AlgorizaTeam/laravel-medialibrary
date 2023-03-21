@@ -2,14 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary;
 
-use DateTimeInterface;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Http\File;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\Downloaders\DefaultDownloader;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
@@ -25,6 +17,14 @@ use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Support\MediaLibraryPro;
 use AlgorizaTeam\MediaLibraryPro\PendingMediaLibraryRequestHandler;
+use DateTimeInterface;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Http\File;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 trait InteractsWithMedia
 {

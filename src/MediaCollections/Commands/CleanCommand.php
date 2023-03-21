@@ -2,11 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Commands;
 
-use Illuminate\Console\Command;
-use Illuminate\Console\ConfirmableTrait;
-use Illuminate\Contracts\Filesystem\Factory;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
 use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
@@ -15,6 +10,11 @@ use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
 use AlgorizaTeam\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use Illuminate\Console\Command;
+use Illuminate\Console\ConfirmableTrait;
+use Illuminate\Contracts\Filesystem\Factory;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Str;
 
 class CleanCommand extends Command
 {

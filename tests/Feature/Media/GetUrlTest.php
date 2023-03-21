@@ -1,7 +1,7 @@
 <?php
 
-use Carbon\Carbon;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
+use Carbon\Carbon;
 
 it('can get an url of an original item', function () {
     $media = $this->testModel->addMedia($this->getTestJpg())->toMediaCollection();

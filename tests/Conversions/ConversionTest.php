@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\Image\Manipulations;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use Spatie\Image\Manipulations;
 
 beforeEach(function () {
     $this->conversionName = 'test';

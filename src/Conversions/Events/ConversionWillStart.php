@@ -2,9 +2,9 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\Events;
 
-use Illuminate\Queue\SerializesModels;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Queue\SerializesModels;
 
 class ConversionWillStart
 {

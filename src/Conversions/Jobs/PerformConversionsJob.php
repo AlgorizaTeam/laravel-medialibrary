@@ -2,13 +2,13 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\Jobs;
 
+use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
+use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
-use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
-use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class PerformConversionsJob implements ShouldQueue
 {

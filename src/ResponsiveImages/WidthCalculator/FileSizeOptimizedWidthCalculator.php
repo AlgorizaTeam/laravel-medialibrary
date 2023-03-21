@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\ResponsiveImages\WidthCalculator;
 
-use Illuminate\Support\Collection;
 use AlgorizaTeam\MediaLibrary\Support\ImageFactory;
+use Illuminate\Support\Collection;
 
 class FileSizeOptimizedWidthCalculator implements WidthCalculator
 {

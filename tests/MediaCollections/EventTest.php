@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Event;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Events\MediaHasBeenAdded;
+use Illuminate\Support\Facades\Event;
 
 it('will fire the media added event', function () {
     Event::fake();

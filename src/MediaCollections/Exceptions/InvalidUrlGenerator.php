@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions;
 
-use Exception;
 use AlgorizaTeam\MediaLibrary\Support\UrlGenerator\UrlGenerator;
+use Exception;
 
 class InvalidUrlGenerator extends Exception
 {

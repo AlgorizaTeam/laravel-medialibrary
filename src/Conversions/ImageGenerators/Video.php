@@ -2,11 +2,11 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators;
 
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use FFMpeg\Coordinate\TimeCode;
 use FFMpeg\FFMpeg;
 use FFMpeg\Media\Video as FFMpegVideo;
 use Illuminate\Support\Collection;
-use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 
 class Video extends ImageGenerator
 {

@@ -2,11 +2,11 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\Actions;
 
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\Support\ImageFactory;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class PerformManipulationsAction
 {

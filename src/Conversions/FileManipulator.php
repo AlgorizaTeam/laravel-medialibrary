@@ -2,8 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions;
 
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\Conversions\Actions\PerformConversionAction;
 use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
 use AlgorizaTeam\MediaLibrary\Conversions\Jobs\PerformConversionsJob;
@@ -11,6 +9,8 @@ use AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 use AlgorizaTeam\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
 use AlgorizaTeam\MediaLibrary\Support\TemporaryDirectory;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class FileManipulator
 {

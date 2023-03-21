@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\Tests\TestSupport\Mail;
 
-use Illuminate\Mail\Mailable;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Mail\Mailable;
 
 class InvalidMediaConversionAttachmentMail extends Mailable
 {

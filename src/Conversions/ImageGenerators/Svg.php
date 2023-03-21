@@ -2,10 +2,10 @@
 
 namespace AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators;
 
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use Illuminate\Support\Collection;
 use Imagick;
 use ImagickPixel;
-use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 
 class Svg extends ImageGenerator
 {

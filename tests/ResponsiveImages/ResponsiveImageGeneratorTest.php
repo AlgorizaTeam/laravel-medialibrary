@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Event;
 use AlgorizaTeam\MediaLibrary\ResponsiveImages\Events\ResponsiveImagesGenerated;
+use Illuminate\Support\Facades\Event;
 
 beforeEach(function () {
     $this->fileName = 'test';

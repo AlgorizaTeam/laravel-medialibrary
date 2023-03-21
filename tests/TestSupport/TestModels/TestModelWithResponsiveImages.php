@@ -2,8 +2,8 @@
 
 namespace AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels;
 
-use Spatie\Image\Manipulations;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Image\Manipulations;
 
 class TestModelWithResponsiveImages extends TestModel
 {

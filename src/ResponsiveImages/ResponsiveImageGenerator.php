@@ -2,7 +2,6 @@
 
 namespace AlgorizaTeam\MediaLibrary\ResponsiveImages;
 
-use Illuminate\Support\Str;
 use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem;
 use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
@@ -14,6 +13,7 @@ use AlgorizaTeam\MediaLibrary\Support\File;
 use AlgorizaTeam\MediaLibrary\Support\FileNamer\FileNamer;
 use AlgorizaTeam\MediaLibrary\Support\ImageFactory;
 use AlgorizaTeam\MediaLibrary\Support\TemporaryDirectory;
+use Illuminate\Support\Str;
 use Spatie\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
 
 class ResponsiveImageGenerator
