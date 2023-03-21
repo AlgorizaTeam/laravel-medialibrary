@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Commands;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Conversions\FileManipulator;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
+use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
+use AlgorizaTeam\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
 
 class CleanCommand extends Command
 {

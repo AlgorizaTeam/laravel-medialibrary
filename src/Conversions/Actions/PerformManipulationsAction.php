@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\Actions;
+namespace AlgorizaTeam\MediaLibrary\Conversions\Actions;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\ImageFactory;
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Support\ImageFactory;
 
 class PerformManipulationsAction
 {

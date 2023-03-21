@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Exceptions;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions;
 
 use Exception;
-use Spatie\MediaLibrary\Support\UrlGenerator\UrlGenerator;
+use AlgorizaTeam\MediaLibrary\Support\UrlGenerator\UrlGenerator;
 
 class InvalidUrlGenerator extends Exception
 {

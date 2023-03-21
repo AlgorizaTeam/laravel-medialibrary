@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace AlgorizaTeam\MediaLibrary\Conversions;
 
 use BadMethodCallException;
 use Illuminate\Support\Traits\Conditionable;
 use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\FileNamer\FileNamer;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Support\FileNamer\FileNamer;
 
 /** @mixin \Spatie\Image\Manipulations */
 class Conversion

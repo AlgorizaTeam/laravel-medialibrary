@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Commands;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Database\Eloquent\Collection;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class ClearCommand extends Command
 {

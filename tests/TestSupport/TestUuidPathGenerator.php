@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport;
+namespace AlgorizaTeam\MediaLibrary\Tests\TestSupport;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class TestUuidPathGenerator extends TestPathGenerator
 {

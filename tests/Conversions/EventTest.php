@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Spatie\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
-use Spatie\MediaLibrary\Conversions\Events\ConversionWillStart;
-use Spatie\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
+use AlgorizaTeam\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
+use AlgorizaTeam\MediaLibrary\Conversions\Events\ConversionWillStart;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Events\CollectionHasBeenCleared;
 
 beforeEach(function () {
     Event::fake();

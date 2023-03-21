@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Exceptions;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions;
 
 class UnreachableUrl extends FileCannotBeAdded
 {

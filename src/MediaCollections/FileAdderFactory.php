@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
-use Spatie\MediaLibrary\Support\RemoteFile;
-use Spatie\MediaLibraryPro\Dto\PendingMediaItem;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
+use AlgorizaTeam\MediaLibrary\Support\RemoteFile;
+use AlgorizaTeam\MediaLibraryPro\Dto\PendingMediaItem;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class FileAdderFactory
 {
     public static function create(Model $subject, string|UploadedFile $file): FileAdder
     {
-        /** @var \Spatie\MediaLibrary\MediaCollections\FileAdder $fileAdder */
+        /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\FileAdder $fileAdder */
         $fileAdder = app(FileAdder::class);
 
         return $fileAdder
@@ -23,7 +23,7 @@ class FileAdderFactory
 
     public static function createFromDisk(Model $subject, string $key, string $disk): FileAdder
     {
-        /** @var \Spatie\MediaLibrary\MediaCollections\FileAdder $fileAdder */
+        /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\FileAdder $fileAdder */
         $fileAdder = app(FileAdder::class);
 
         return $fileAdder
@@ -68,7 +68,7 @@ class FileAdderFactory
 
     public static function createForPendingMedia(Model $subject, PendingMediaItem $pendingMedia): FileAdder
     {
-        /** @var \Spatie\MediaLibrary\MediaCollections\FileAdder $fileAdder */
+        /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\FileAdder $fileAdder */
         $fileAdder = app(FileAdder::class);
 
         return $fileAdder

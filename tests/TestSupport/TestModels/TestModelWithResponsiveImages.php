@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\TestModels;
+namespace AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels;
 
 use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class TestModelWithResponsiveImages extends TestModel
 {

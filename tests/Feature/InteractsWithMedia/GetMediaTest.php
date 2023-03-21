@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 
 it('can handle an empty collection', function () {
     $emptyCollection = $this->testModel->getMedia('images');

@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\MediaLibrary;
+namespace AlgorizaTeam\MediaLibrary;
 
 use Illuminate\Support\ServiceProvider;
-use Spatie\MediaLibrary\Conversions\Commands\RegenerateCommand;
-use Spatie\MediaLibrary\MediaCollections\Commands\CleanCommand;
-use Spatie\MediaLibrary\MediaCollections\Commands\ClearCommand;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
-use Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
-use Spatie\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use AlgorizaTeam\MediaLibrary\Conversions\Commands\RegenerateCommand;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Commands\CleanCommand;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Commands\ClearCommand;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem;
+use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
 
 class MediaLibraryServiceProvider extends ServiceProvider
 {

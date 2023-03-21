@@ -2,19 +2,19 @@
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Storage;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnknownType;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\UnknownType;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 it('can add an file to the default collection', function () {

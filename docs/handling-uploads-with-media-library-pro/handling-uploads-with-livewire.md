@@ -43,7 +43,7 @@ Here's how that might look like in the view of your Livewire component:
 ```
 
 In your Livewire component you must:
-- use the `Spatie\MediaLibraryPro\Http\Livewire\Concerns\WithMedia` trait
+- use the `AlgorizaTeam\MediaLibraryPro\Http\Livewire\Concerns\WithMedia` trait
 - add a public property `$mediaComponentNames` set to array that contains all the names of media library pro components that you are going to use. 
 - for each component that you are going to use you should add a public property with the name you use in the view for that component (in the example above: `myUpload`)
 
@@ -54,7 +54,7 @@ namespace App\Http\Livewire;
 
 use App\Models\YourModel;
 use Livewire\Component;
-use Spatie\MediaLibraryPro\Http\Livewire\Concerns\WithMedia;
+use AlgorizaTeam\MediaLibraryPro\Http\Livewire\Concerns\WithMedia;
 
 class MyForm extends Component
 {
@@ -142,7 +142,7 @@ Uploading multiple files is very similar to uploading a single file. The only th
 ![Screenshot of the attachment component](/docs/laravel-medialibrary/v10/images/pro/multiple.png)
 
 In your Livewire component you must:
-- use the `Spatie\MediaLibraryPro\Http\Livewire\Concerns\WithMedia` trait
+- use the `AlgorizaTeam\MediaLibraryPro\Http\Livewire\Concerns\WithMedia` trait
 - add a public property `$mediaComponentNames` set to array that contains all the names of media library pro components that you are going to use.
 - for each component that you are going to use you should add a public property with the name you use in the view for that component (in the example above: `myUpload`)
 
@@ -153,7 +153,7 @@ namespace App\Http\Livewire;
 
 use App\Models\YourModel;
 use Livewire\Component;
-use Spatie\MediaLibraryPro\Http\Livewire\Concerns\WithMedia;
+use AlgorizaTeam\MediaLibraryPro\Http\Livewire\Concerns\WithMedia;
 
 class MyForm extends Component
 {
@@ -238,7 +238,7 @@ already [prepared the model](/docs/laravel-medialibrary/v10/basic-usage/preparin
 ```
 
 In your Livewire component you must:
-- use the `Spatie\MediaLibraryPro\Http\Livewire\Concerns\WithMedia` trait
+- use the `AlgorizaTeam\MediaLibraryPro\Http\Livewire\Concerns\WithMedia` trait
 - add a public property `$mediaComponentNames` set to array that contains all the names of media library pro components that you are going to use.
 - for each component that you are going to use you should add a public property with the name you use in the view for that component (in the example above: `myUpload`)
 
@@ -249,7 +249,7 @@ namespace App\Http\Livewire;
 
 use App\Models\BlogPost;
 use Livewire\Component;
-use Spatie\MediaLibraryPro\Http\Livewire\Concerns\WithMedia;
+use AlgorizaTeam\MediaLibraryPro\Http\Livewire\Concerns\WithMedia;
 
 class MyForm extends Component
 {

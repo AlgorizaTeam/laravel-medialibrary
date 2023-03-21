@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests;
+namespace AlgorizaTeam\MediaLibrary\Tests;
 
 use CreateTemporaryUploadsTable;
 use Dotgetenv\Dotgetenv;
@@ -8,18 +8,18 @@ use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\File;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\MediaLibrary\MediaLibraryServiceProvider;
-use Spatie\MediaLibrary\Support\MediaLibraryPro;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionQueued;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionsOnOtherDisk;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionUsingModelInstance;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMorphMap;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMultipleConversions;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithPreviewConversion;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithResponsiveImages;
+use AlgorizaTeam\MediaLibrary\MediaLibraryServiceProvider;
+use AlgorizaTeam\MediaLibrary\Support\MediaLibraryPro;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionQueued;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionsOnOtherDisk;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionUsingModelInstance;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMorphMap;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMultipleConversions;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithPreviewConversion;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithResponsiveImages;
 use ZipArchive;
 
 abstract class TestCase extends Orchestra

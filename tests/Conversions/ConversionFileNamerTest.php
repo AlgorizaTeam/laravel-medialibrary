@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Tests\TestSupport\TestFileNamer;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestFileNamer;
 
 it('can use a custom file namer', function () {
     $fileName = "prefix_test_suffix";

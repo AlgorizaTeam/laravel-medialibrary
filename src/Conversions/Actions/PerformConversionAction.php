@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\Actions;
+namespace AlgorizaTeam\MediaLibrary\Conversions\Actions;
 
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
-use Spatie\MediaLibrary\Conversions\Events\ConversionWillStart;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use AlgorizaTeam\MediaLibrary\Conversions\Events\ConversionHasBeenCompleted;
+use AlgorizaTeam\MediaLibrary\Conversions\Events\ConversionWillStart;
+use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\ResponsiveImageGenerator;
 
 class PerformConversionAction
 {

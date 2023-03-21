@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Downloaders;
+namespace AlgorizaTeam\MediaLibrary\Downloaders;
 
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
 
 class DefaultDownloader implements Downloader
 {

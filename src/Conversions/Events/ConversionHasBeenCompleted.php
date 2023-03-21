@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\Events;
+namespace AlgorizaTeam\MediaLibrary\Conversions\Events;
 
 use Illuminate\Queue\SerializesModels;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class ConversionHasBeenCompleted
 {

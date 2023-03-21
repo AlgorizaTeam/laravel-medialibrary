@@ -1,30 +1,30 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Traits\Macroable;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnknownType;
-use Spatie\MediaLibrary\MediaCollections\File as PendingFile;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\RemoteFile;
-use Spatie\MediaLibraryPro\Models\TemporaryUpload;
+use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
+use AlgorizaTeam\MediaLibrary\HasMedia;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\UnknownType;
+use AlgorizaTeam\MediaLibrary\MediaCollections\File as PendingFile;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
+use AlgorizaTeam\MediaLibrary\Support\File;
+use AlgorizaTeam\MediaLibrary\Support\RemoteFile;
+use AlgorizaTeam\MediaLibraryPro\Models\TemporaryUpload;
 use Symfony\Component\HttpFoundation\File\File as SymfonyFile;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
- * @template TModel of \Spatie\MediaLibrary\MediaCollections\Models\Media
+ * @template TModel of \AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media
  */
 class FileAdder
 {
@@ -242,7 +242,7 @@ class FileAdder
         }
 
         $mediaClass = config('media-library.media_model');
-        /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $media */
+        /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media $media */
         $media = new $mediaClass();
 
         $media->name = $this->mediaName;
@@ -306,7 +306,7 @@ class FileAdder
         }
 
         $mediaClass = config('media-library.media_model');
-        /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $media */
+        /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media $media */
         $media = new $mediaClass();
 
         $media->name = $this->mediaName;

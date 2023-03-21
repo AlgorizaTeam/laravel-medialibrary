@@ -2,10 +2,10 @@
 
 use Carbon\Carbon;
 use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
+use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
 
 it('can add an file to the default collection', function () {
     $media = $this->testModelWithoutMediaConversions

@@ -12,7 +12,7 @@ The provided `MediaStream` class that allows you to respond with a stream. Files
 Here's an example on how it can be used:
 
 ```php
-use Spatie\MediaLibrary\Support\MediaStream;
+use AlgorizaTeam\MediaLibrary\Support\MediaStream;
 
 class DownloadMediaController
 {
@@ -35,7 +35,7 @@ All the available options are listed on the [ZipStream-PHP wiki](https://github.
 Here's an example on how it can be used:
 
 ```php
-use Spatie\MediaLibrary\Support\MediaStream;
+use AlgorizaTeam\MediaLibrary\Support\MediaStream;
 use ZipStream\Option\Archive as ArchiveOptions;
 
 class DownloadMediaController

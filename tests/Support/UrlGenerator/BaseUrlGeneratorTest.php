@@ -1,8 +1,8 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
-use Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
+use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
+use AlgorizaTeam\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
+use AlgorizaTeam\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
 
 beforeEach(function () {
     $this->config = app('config');

@@ -1,8 +1,8 @@
 <?php
 
-use Spatie\MediaLibrary\MediaLibraryServiceProvider;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestCustomMediaModel;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use AlgorizaTeam\MediaLibrary\MediaLibraryServiceProvider;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestCustomMediaModel;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 
 beforeEach(function () {
     addMedia($this->testModel);

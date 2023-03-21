@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\MediaLibrary\ResponsiveImages;
+namespace AlgorizaTeam\MediaLibrary\ResponsiveImages;
 
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\Events\ResponsiveImagesGenerated;
-use Spatie\MediaLibrary\ResponsiveImages\Exceptions\InvalidTinyJpg;
-use Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
-use Spatie\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\FileNamer\FileNamer;
-use Spatie\MediaLibrary\Support\ImageFactory;
-use Spatie\MediaLibrary\Support\TemporaryDirectory;
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\Events\ResponsiveImagesGenerated;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\Exceptions\InvalidTinyJpg;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use AlgorizaTeam\MediaLibrary\Support\File;
+use AlgorizaTeam\MediaLibrary\Support\FileNamer\FileNamer;
+use AlgorizaTeam\MediaLibrary\Support\ImageFactory;
+use AlgorizaTeam\MediaLibrary\Support\TemporaryDirectory;
 use Spatie\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
 
 class ResponsiveImageGenerator

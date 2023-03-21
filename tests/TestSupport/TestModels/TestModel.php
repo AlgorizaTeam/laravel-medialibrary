@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\TestModels;
+namespace AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use AlgorizaTeam\MediaLibrary\HasMedia;
+use AlgorizaTeam\MediaLibrary\InteractsWithMedia;
 
 class TestModel extends Model implements HasMedia
 {

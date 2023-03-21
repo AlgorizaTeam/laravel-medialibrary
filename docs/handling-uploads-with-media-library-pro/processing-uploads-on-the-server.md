@@ -118,7 +118,7 @@ To validate uploaded media, we'll use create a custom form request.
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
+use AlgorizaTeam\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
 
 class ProfileRequest extends FormRequest
 {
@@ -159,7 +159,7 @@ The content of that request key will be an array. For each file uploaded that ar
 
 Even though the upload components do some client-side validation, we highly recommend always validating requests on the server as well.
 
-You should handle validation in a form request. On the form request you should use the `Spatie\MediaLibraryPro\Rules\Concerns\ValidatesMedia` trait. This will give you access to the `validateSingleMedia` and `validateMultipleMedia` methods.
+You should handle validation in a form request. On the form request you should use the `AlgorizaTeam\MediaLibraryPro\Rules\Concerns\ValidatesMedia` trait. This will give you access to the `validateSingleMedia` and `validateMultipleMedia` methods.
 
 In this example we assume that a component was configured to use the `images` key of the request. We validate that there was at least one item uploaded, but no more than 5. Only `png`s that are up to 1MB in size are allowed. All images should have a name.
 
@@ -167,7 +167,7 @@ In this example we assume that a component was configured to use the `images` ke
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
+use AlgorizaTeam\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
 
 class MyRequest extends FormRequest
 {
@@ -194,7 +194,7 @@ If you are only allowing one uploaded file, you can use the `validateSingleMedia
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
+use AlgorizaTeam\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
 
 class MyRequest extends FormRequest
 {
@@ -239,7 +239,7 @@ Here's an example where we validate `extra_property` and `another_extra_property
 
 ```php
 use Illuminate\Foundation\Http\FormRequest;
-use Spatie\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
+use AlgorizaTeam\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
 
 class StoreLivewireCollectionCustomPropertyRequest extends FormRequest
 {
@@ -338,7 +338,7 @@ $yourModel
     ->toMediaCollection('images');
 ```
 
-Alternatively, you can pass a callable to `usingName`. This callable accepts an instance of `Spatie\MediaLibraryPro\MediaLibraryRequestItem` which can be used to get properties of the uploaded file.
+Alternatively, you can pass a callable to `usingName`. This callable accepts an instance of `AlgorizaTeam\MediaLibraryPro\MediaLibraryRequestItem` which can be used to get properties of the uploaded file.
 
 For this we have to add the `editableName` attribute to the component:
 
@@ -368,7 +368,7 @@ $yourModel
     ->toMediaCollection('images');
 ```
 
-Alternatively, you can pass a callable to `usingFileName`. This callable accepts an instance of `Spatie\MediaLibraryPro\MediaLibraryRequestItem` which can be used to get properties of the uploaded file.
+Alternatively, you can pass a callable to `usingFileName`. This callable accepts an instance of `AlgorizaTeam\MediaLibraryPro\MediaLibraryRequestItem` which can be used to get properties of the uploaded file.
 
 In this example we're going to lowercase the name of the uploaded file before adding it the media library.
 
@@ -388,8 +388,8 @@ You can customize this by registering a preview manipulation. Typically, this wo
 Here's an example where we will create 300x300 previews
 
 ```php
-use Spatie\MediaLibraryPro\Models\TemporaryUpload;
-use Spatie\MediaLibrary\Conversions\Conversion;
+use AlgorizaTeam\MediaLibraryPro\Models\TemporaryUpload;
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
 use Spatie\Image\Manipulations;
 
 // in a service provider

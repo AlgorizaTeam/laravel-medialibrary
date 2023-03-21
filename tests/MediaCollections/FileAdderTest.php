@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\MediaCollections;
+namespace AlgorizaTeam\MediaLibrary\Tests\MediaCollections;
 
-use Spatie\MediaLibrary\MediaCollections\FileAdder;
+use AlgorizaTeam\MediaLibrary\MediaCollections\FileAdder;
 
 it('sanitizes filenames correctly', function () {
     /** @var FileAdder $adder */

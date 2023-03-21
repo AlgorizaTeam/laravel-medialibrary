@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
-use Spatie\MediaLibrary\Tests\Support\PathGenerator\CustomPathGenerator;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
-use Spatie\MediaLibrary\Tests\TestSupport\TestPathGenerators\TestPathGeneratorConversionsInOriginalImageDirectory;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
+use AlgorizaTeam\MediaLibrary\Tests\Support\PathGenerator\CustomPathGenerator;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestPathGenerators\TestPathGeneratorConversionsInOriginalImageDirectory;
 
 beforeEach(function () {
     $this->media['model1']['collection1'] = $this->testModel
@@ -58,7 +58,7 @@ it('can clean deprecated conversion files with none arguments given', function (
 });
 
 test('generated conversion are cleared after cleanup', function () {
-    /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $media */
+    /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media $media */
     $media = $this->media['model2']['collection1'];
 
     Media::where('id', '<>', $media->id)->delete();

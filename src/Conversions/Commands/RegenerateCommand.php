@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\Commands;
+namespace AlgorizaTeam\MediaLibrary\Conversions\Commands;
 
 use Exception;
 use Illuminate\Console\Command;
@@ -8,9 +8,9 @@ use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\FileManipulator;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Conversions\FileManipulator;
+use AlgorizaTeam\MediaLibrary\MediaCollections\MediaRepository;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 class RegenerateCommand extends Command
 {

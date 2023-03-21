@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Tests\TestSupport\TestFileNamer;
+use AlgorizaTeam\MediaLibrary\Tests\TestSupport\TestFileNamer;
 
 beforeEach(function () {
     config()->set("media-library.file_namer", TestFileNamer::class);

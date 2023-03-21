@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Models;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections\Models;
 
 use DateTimeInterface;
 use Illuminate\Contracts\Mail\Attachable;
@@ -14,23 +14,23 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Mail\Attachment;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\HtmlableMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\CustomMediaProperties;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\HasUuid;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\IsSorted;
-use Spatie\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\MediaLibraryPro;
-use Spatie\MediaLibrary\Support\TemporaryDirectory;
-use Spatie\MediaLibrary\Support\UrlGenerator\UrlGenerator;
-use Spatie\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
-use Spatie\MediaLibraryPro\Models\TemporaryUpload;
+use AlgorizaTeam\MediaLibrary\Conversions\Conversion;
+use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
+use AlgorizaTeam\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use AlgorizaTeam\MediaLibrary\HasMedia;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem;
+use AlgorizaTeam\MediaLibrary\MediaCollections\HtmlableMedia;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Concerns\CustomMediaProperties;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Concerns\HasUuid;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Concerns\IsSorted;
+use AlgorizaTeam\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
+use AlgorizaTeam\MediaLibrary\Support\File;
+use AlgorizaTeam\MediaLibrary\Support\MediaLibraryPro;
+use AlgorizaTeam\MediaLibrary\Support\TemporaryDirectory;
+use AlgorizaTeam\MediaLibrary\Support\UrlGenerator\UrlGenerator;
+use AlgorizaTeam\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
+use AlgorizaTeam\MediaLibraryPro\Models\TemporaryUpload;
 
 /**
  * @property-read string $uuid
@@ -365,7 +365,7 @@ class Media extends Model implements Responsable, Htmlable, Attachable
 
         $temporaryFile = $temporaryDirectory->path('/') . DIRECTORY_SEPARATOR . $this->file_name;
 
-        /** @var \Spatie\MediaLibrary\MediaCollections\Filesystem $filesystem */
+        /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem $filesystem */
         $filesystem = app(Filesystem::class);
 
         $filesystem->copyFromMediaLibrary($this, $temporaryFile);
@@ -393,7 +393,7 @@ class Media extends Model implements Responsable, Htmlable, Attachable
 
     public function stream()
     {
-        /** @var \Spatie\MediaLibrary\MediaCollections\Filesystem $filesystem */
+        /** @var \AlgorizaTeam\MediaLibrary\MediaCollections\Filesystem $filesystem */
         $filesystem = app(Filesystem::class);
 
         return $filesystem->getStream($this);

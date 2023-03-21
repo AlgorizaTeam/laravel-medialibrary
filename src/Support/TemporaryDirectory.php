@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support;
+namespace AlgorizaTeam\MediaLibrary\Support;
 
 use Illuminate\Support\Str;
 use Spatie\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;

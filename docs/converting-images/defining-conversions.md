@@ -25,9 +25,9 @@ You should add a method called `registerMediaConversions` to your model. In that
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\HasMedia;
+use AlgorizaTeam\MediaLibrary\InteractsWithMedia;
 
 class YourModel extends Model implements HasMedia
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace AlgorizaTeam\MediaLibrary\MediaCollections;
 
 class File implements \Stringable
 {

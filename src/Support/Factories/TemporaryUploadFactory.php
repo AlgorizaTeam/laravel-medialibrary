@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\Factories;
+namespace AlgorizaTeam\MediaLibrary\Support\Factories;
 
 class TemporaryUploadFactory
 {

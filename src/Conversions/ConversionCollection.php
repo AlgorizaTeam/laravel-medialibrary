@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace AlgorizaTeam\MediaLibrary\Conversions;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Spatie\Image\Manipulations;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
 
 /**
  * @template TKey of array-key
- * @template TValue of \Spatie\MediaLibrary\Conversions\Conversion
+ * @template TValue of \AlgorizaTeam\MediaLibrary\Conversions\Conversion
  *
  * @extends \Illuminate\Support\Collection<TKey, TValue>
  */
@@ -52,7 +52,7 @@ class ConversionCollection extends Collection
     {
         $modelName = Arr::get(Relation::morphMap(), $media->model_type, $media->model_type);
 
-        /** @var \Spatie\MediaLibrary\HasMedia $model */
+        /** @var \AlgorizaTeam\MediaLibrary\HasMedia $model */
         $model = new $modelName();
 
         /*
@@ -91,7 +91,7 @@ class ConversionCollection extends Collection
 
     protected function addManipulationToConversion(Manipulations $manipulations, string $conversionName)
     {
-        /** @var \Spatie\MediaLibrary\Conversions\Conversion|null $conversion */
+        /** @var \AlgorizaTeam\MediaLibrary\Conversions\Conversion|null $conversion */
         $conversion = $this->first(function (Conversion $conversion) use ($conversionName) {
             if (! in_array($this->media->collection_name, $conversion->getPerformOnCollections())) {
                 return false;

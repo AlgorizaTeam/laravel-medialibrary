@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\UrlGenerator;
+namespace AlgorizaTeam\MediaLibrary\Support\UrlGenerator;
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrlGenerator;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use AlgorizaTeam\MediaLibrary\Conversions\ConversionCollection;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Exceptions\InvalidUrlGenerator;
+use AlgorizaTeam\MediaLibrary\MediaCollections\Models\Media;
+use AlgorizaTeam\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
 
 class UrlGeneratorFactory
 {
@@ -15,7 +15,7 @@ class UrlGeneratorFactory
 
         static::guardAgainstInvalidUrlGenerator($urlGeneratorClass);
 
-        /** @var \Spatie\MediaLibrary\Support\UrlGenerator\UrlGenerator $urlGenerator */
+        /** @var \AlgorizaTeam\MediaLibrary\Support\UrlGenerator\UrlGenerator $urlGenerator */
         $urlGenerator = app($urlGeneratorClass);
 
         $pathGenerator = PathGeneratorFactory::create($media);
